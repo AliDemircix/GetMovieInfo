@@ -1,6 +1,6 @@
 const searchShow = (searchText = 'ask') => {
   console.log(searchText);
-  fetch(`http://api.tvmaze.com/search/shows?q=${searchText}`)
+  fetch(`https://api.tvmaze.com/search/shows?q=${searchText}`)
     .then((response) => response.json())
     .then((data) => {
       const resultName = data.map((item) => {
